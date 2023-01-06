@@ -69,16 +69,16 @@ jobs:
 
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
-    - name: Autobuild
-      uses: github/codeql-action/autobuild@v2
+    #- name: Autobuild
+    #  uses: github/codeql-action/autobuild@v2
 
 
 
-    #- name: Build library
-    #  run: ./gradlew trustdevice:assembleRelease
+    - name: Build library
+      run: ./gradlew trustdevice:assembleRelease
 
-    #- name: Build App
-    #  run: ./gradlew app:assembleRelease
+    - name: Build App
+      run: ./gradlew app:assembleRelease
       
 
     # ℹ️ Command-line programs to run using the OS shell.
